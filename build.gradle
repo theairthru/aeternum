@@ -1,0 +1,32 @@
+plugins { id 'fabric-loom' version '1.17.21'; id 'maven-publish' }
+version = '0.6.0'
+group = 'dev.aeternum'
+base { archivesName = 'aeternum' }
+repositories { mavenCentral() }
+dependencies {
+    ['imageio-webp', 'imageio-core', 'imageio-metadata'].each { implementation include("com.twelvemonkeys.imageio:${it}:3.12.0") }
+    ['common-lang', 'common-io', 'common-image'].each { implementation include("com.twelvemonkeys.common:${it}:3.12.0") }
+    minecraft 'com.mojang:minecraft:1.21.11'
+    mappings loom.officialMojangMappings()
+    modImplementation 'net.fabricmc:fabric-loader:0.19.5'
+    modImplementation 'net.fabricmc.fabric-api:fabric-api:0.141.6+1.21.11'
+    if (project.hasProperty('performanceMods')) {
+        modRuntimeOnly fileTree(dir: project.property('performanceMods'), include: '*.jar', exclude: 'fabric-api-*.jar')
+    }
+}
+java { sourceCompatibility = JavaVersion.VERSION_21; targetCompatibility = JavaVersion.VERSION_21; withSourcesJar() }
+tasks.withType(JavaCompile).configureEach { options.release = 21 }
+fabricApi.configureTests {
+    createSourceSet = true
+    modId = 'aeternum-test'
+    enableClientGameTests = true
+    enableGameTests = false
+    eula = true
+}
+
+
+
+
+
+
+tasks.named("jar") { from("LICENSE") }
