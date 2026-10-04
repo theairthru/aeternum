@@ -1,0 +1,9 @@
+{
+  "required": true,
+  "package": "dev.aeternum.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "client": ["CameraMixin", "CapeMixin", "EntityMixin", "KeyboardInputMixin", "MinecraftMixin", "GameRendererMixin", "MouseMixin", "EntityRendererMixin", "LightTextureMixin", "VisGraphMixin", "FluidRenderingMixin", "FluidLayerMixin"],
+  "injectors": { "defaultRequire": 1 }
+}
+
+

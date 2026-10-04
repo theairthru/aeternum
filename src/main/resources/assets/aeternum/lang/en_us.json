@@ -1,0 +1,26 @@
+{
+  "key.category.aeternum.controls": "Aeternum",
+  "key.aeternum.menu": "Open Aeternum",
+  "key.aeternum.armour": "Toggle armour status",
+  "key.aeternum.keystrokes": "Toggle keystrokes",
+  "key.aeternum.clock": "Toggle clock",
+  "key.aeternum.fps": "Toggle FPS",
+  "key.aeternum.ping": "Toggle ping",
+  "key.aeternum.coordinates": "Toggle coordinates",
+  "key.aeternum.effects": "Toggle potion effects",
+  "key.aeternum.low_health": "Toggle health warning",
+  "key.aeternum.freelook": "Freelook (hold)",
+  "key.aeternum.freecam": "Toggle freecam",
+  "key.aeternum.xray": "Toggle X-ray",
+  "key.aeternum.hitboxes": "Toggle hitboxes",
+  "key.aeternum.zoom": "Zoom (hold)",
+  "key.aeternum.sprint": "Toggle automatic sprint",
+  "key.aeternum.fullbright": "Toggle fullbright",
+  "key.aeternum.performance": "Toggle entity culling",
+  "key.aeternum.cape": "Toggle custom cape",
+  "key.aeternum.media": "Toggle media controls",
+  "key.aeternum.media_previous": "Media: restart / previous",
+  "key.aeternum.media_next": "Media: next",
+  "key.aeternum.media_play": "Media: play / pause"
+}
+
